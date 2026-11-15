@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "droprig",
+  "version": "${version}",
+  "name": "Drop Rig",
+  "description": "Client-side display mod for two-dropper number games. Shows the dropper you pick as the higher number on your screen only; the real server result is unchanged.",
+  "authors": [
+    "Drop Rig"
+  ],
+  "license": "MIT",
+  "icon": "assets/droprig/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.droprig.DropRigClient"
+    ]
+  },
+  "mixins": [
+    "droprig.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
